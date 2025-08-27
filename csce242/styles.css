@@ -1,0 +1,66 @@
+body {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background-color: #f0f4f8;
+margin: 0;
+padding: 0%;
+color: #2c3e50;
+
+}
+
+/* centered content */
+#content {
+max-width: 900;
+margin: 40px auto;
+background: #ffffff;
+padding: 20px 40px;
+border-radius: 12px;
+box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+
+}
+
+h1, h2 {
+    color: #34495e; 
+}
+
+p {
+font-size: 1.1em;
+line-height: 1.6;
+
+}
+
+/* github repo link */
+#repo-link {
+display: block;
+margin: 15px 0;
+font-weight: bold;
+color: #16a085;
+text-decoration: none;
+
+}
+
+#repo-link:hover {
+    color: #1abc9c;
+}
+
+/* Assignment list styling */ 
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+li {
+    margin: 8px 0;
+}
+
+/* styled assignment links */ 
+.assignment-link {
+text-decoration: none; /* remove underline */
+color: #2980b9;
+font-weight: 500;
+
+}
+
+.assignment-link:hover {
+color: #e67e22; /* orange hover */ 
+
+}
