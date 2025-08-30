@@ -1,66 +1,88 @@
+/* General styles */
 body {
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-background-color: #f0f4f8;
-margin: 0;
-padding: 0%;
-color: #2c3e50;
-
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
 }
 
-/* centered content */
-#content {
-max-width: 900;
-margin: 40px auto;
-background: #ffffff;
-padding: 20px 40px;
-border-radius: 12px;
-box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-
+header {
+    background: #222;
+    color: white;
+    padding: 1rem;
+    text-align: center;
 }
 
-h1, h2 {
-    color: #34495e; 
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
 }
 
-p {
-font-size: 1.1em;
-line-height: 1.6;
-
+/* Assignment cards */ 
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
 }
 
-/* github repo link */
-#repo-link {
-display: block;
-margin: 15px 0;
-font-weight: bold;
-color: #16a085;
-text-decoration: none;
-
+.assignment {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s ease-in-out;
 }
 
-#repo-link:hover {
-    color: #1abc9c;
+.assignment:hover {
+    transform: scale(1.03);
 }
 
-/* Assignment list styling */ 
-ul {
-    list-style-type: square;
-    padding-left: 20px;
+.assignment img {
+    width: 100;
+    height: 180px; /* same size for all */
+    object-fit: cover;
 }
 
-li {
-    margin: 8px 0;
+.description {
+    padding: 1rem;
+    text-align: center;
 }
 
-/* styled assignment links */ 
-.assignment-link {
-text-decoration: none; /* remove underline */
-color: #2980b9;
-font-weight: 500;
-
+.description h2 {
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
 }
 
-.assignment-link:hover {
-color: #e67e22; /* orange hover */ 
+.description a {
+    text-decoration: none;
+    color: white;
+    background: #0077cc;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: background 0.3; 
+}
 
+.description a:hover {
+background: #005fa3;
+}
+
+/* Mobile layout */ 
+@media (max-width: 768px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .assignment {
+        width: 90%;
+    }
 }

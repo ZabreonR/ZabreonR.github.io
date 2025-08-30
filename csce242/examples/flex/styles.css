@@ -1,0 +1,92 @@
+body {
+    background-color: #4f5902;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#content {
+    width: 95%;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    padding: 5px;
+}
+#main-header {
+    background-color: #4f5902;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
+/* Main Navigation */ 
+#main-nav ul {
+    list-style-type: none; /* removes bullets */
+    padding-left: 0;
+}
+
+#main-nav a:hover {
+background: white;
+color: #4f5902;
+}
+
+
+#main-nav li {
+border-bottom: 1px white;
+padding: 10px 0;
+}
+
+#main-nav li:first-child {
+    border-top: 1px solid white;
+}
+
+#main-nav a {
+color: white;
+padding: 10px 5px;
+display: block;
+text-decoration: none; /* removes underline */
+
+}
+
+/* Typography */ 
+h1 {
+text-align: center;
+
+}
+
+
+/* Larger devices */ 
+@media only screen and (min-width: 768px) {
+
+    body {
+    background: url(images/forestb.jpg); 
+    background-size: cover;
+    }
+
+#content {
+    width: 70%;
+}
+
+/* Columns */ 
+.columns {
+    display: flex;
+}
+
+/* Main nav */
+#main-nav li {
+    flex:1;
+}
+#main-nav li, #main-nav li:first-child {
+    border: none;
+}
+#main-nav a {
+    text-align: center;
+padding: 5px;
+}
+
+#main-nav a:hover {
+    background: #4f5902;
+    color: white;
+    border-bottom: 1px solid white;
+
+}
+}
