@@ -1,0 +1,145 @@
+/* General page styling */ 
+body {
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f9f9e6;
+}
+
+header {
+    text-align: center;
+    padding: 1em;
+    background: #f9f9e6;
+}
+ 
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    background: #d97b7b;
+}
+
+nav li {
+    flex: 1;
+    text-align: center;
+    border-right: 1px solid white;
+}
+
+nav li:last-child {
+    border-right: none;
+}
+
+nav a {
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+nav a:hover {
+    background: #b95d5d;
+}
+
+/* Layout */ 
+main {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+aside {
+    background: #9bb;
+    padding: 10px;
+    flex: 1;
+}
+
+aside img {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+section {
+    flex: 3;
+}
+
+article {
+    margin-bottom: 20px;
+}
+
+article h2, article h3 {
+    color: #3b6b6b;
+}
+
+/* Gallery Section */
+.gallery-section {
+    display: flex;
+    padding: 20px;
+    gap: 20px;
+}
+
+.gallery-section aside {
+    background: #d97b7b;
+    color: white;
+    flex: 1;
+}
+
+.gallery-section aside h3 {
+    margin-top: 0;
+}
+
+.gallery-section aside ul {
+    list-style: none;
+    padding: 0;
+}
+
+.gallery-section aside a {
+    color: white;
+    text-decoration: none;
+}
+
+.gallery {
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+flex: 4;
+}
+
+.gallery article {
+    flex: 1 1 calc(33% - 20px);
+    background: #6a8f91;
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.gallery img {
+    max-width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Footer */ 
+footer {
+    background: #d97b7b;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
+
+/* Responsive Desgin */ 
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav li {
+        border-right: none;
+        border-bottom: 1px solid white;
+    }
+
+    nav li:last-child {
+        border-bottom: none;
+    }
+}
