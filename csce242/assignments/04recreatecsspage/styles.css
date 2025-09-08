@@ -1,0 +1,121 @@
+/* Base */ 
+:root{
+    --garnet:#73000a;
+    --black:#000000;
+    --gray-100:#f5f5f5;
+    --gray-200:#ececec;
+    --gray-700:#555;
+    --text:#333;
+}
+*{
+    box-sizing: border-box;}
+    html,body{margin: 0;padding: 0;}
+    body{font-family: Arial, Helvetica, sans-serif; color: var(--text); line-height: 1.5;}
+
+    /* Containers */ 
+    .container{max-width: 1200px; margin:0 auto; padding:0 1rem;}
+    
+    /* Nav */ 
+    .site-nav{
+        background:var(--garnet);
+        position:sticky; top:0; z-index:10;
+    }
+
+    .nav-inner{
+        max-width:1200px; margin:0 auto; padding:1rem;
+        display:flex; gap:1rem; flex-wrap:wrap; justify-content:center;
+      }
+
+      .site-nav a{color:#fff; text-decoration:none; font-weight:bold; padding:.25rem .5rem}
+.site-nav a:hover{text-decoration:underline}
+
+/* Hero */
+.hero{background:var(--gray-200); padding:3rem 0; text-align:center}
+.hero h1{color:var(--garnet); margin:0 0 .5rem}
+.hero p{margin:0 auto; max-width:800px}
+
+/* Sections */
+.section{padding:3rem 0}
+.section.alt{background:var(--gray-100)}
+.two-col .container{display:flex; gap:2rem; align-items:center; flex-wrap:wrap}
+.two-col .col{flex:1 1 300px; min-width:280px}
+.two-col img{display:block; width:100%; height:auto; border-radius:4px}
+
+/* Links & Buttons */
+.link{color:var(--garnet); text-decoration:none; font-weight:bold}
+.link:hover{text-decoration:underline}
+.btn{
+  display:inline-block; background:var(--garnet); color:#fff; text-decoration:none;
+  padding:.75rem 1.25rem; border-radius:4px; font-weight:bold
+}
+
+/* Lists */
+.stat-list{margin:1rem 0 0; padding-left:1.25rem}
+.stat-list li{margin:.4rem 0}
+.news-list{list-style:none; padding:0; margin:0}
+.news-list li{margin:.5rem 0}
+.news-list a{color:var(--garnet); text-decoration:none}
+.news-list a:hover{text-decoration:underline}
+
+/* Colleges & Schools grid */
+.colleges{padding:3rem 0; background:#fff; border-top:1px solid #ddd}
+.colleges h2{text-align:center; color:var(--garnet); margin:0 0 .5rem}
+.colleges .lede{max-width:800px; margin:.25rem auto 2rem; text-align:center; color:var(--gray-700)}
+
+.college-grid{
+    display:flex; flex-wrap:wrap; gap:1rem; justify-content:center
+  }
+  .college-card{
+    display:flex; flex-direction:column; text-decoration:none; color:inherit;
+    background:#fff; border:1px solid #ddd; border-radius:6px; overflow:hidden;
+    flex:1 1 260px; max-width:360px; transition:transform .05s ease-in-out
+  }
+  .college-card:hover{transform:translateY(-2px)}
+  .college-card img{width:100%; height:auto; display:block}
+  .college-card h3{margin:.75rem 1rem .25rem; font-size:1.05rem}
+  .college-card p{margin:0 1rem 1rem; color:var(--gray-700); font-size:.95rem}
+  
+  * Footer */
+.site-footer{background:#333; color:#fff; padding:2.5rem 0; margin-top:2rem}
+.footer-top{display:flex; gap:1rem; justify-content:space-between; align-items:center; flex-wrap:wrap}
+.footer-links a, .socials a{color:#fff; text-decoration:none; margin-right:.75rem; font-size:.95rem}
+.footer-links a:hover, .socials a:hover{text-decoration:underline}
+.site-footer address{font-style:normal; margin:1rem 0; color:#ddd}
+.legal{margin:0; color:#bbb; font-size:.9rem}
+
+/* Quick Links Section (Bottom Columns) */
+.quick-links{
+    background:var(--garnet);
+    color:#fff;
+    padding:3rem 0;
+  }
+  .quick-links .container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    gap:2rem;
+  }
+  .ql-column{
+    flex:1 1 250px;
+    min-width:200px;
+  }
+  .ql-column h3{
+    font-size:1.1rem;
+    font-weight:bold;
+    margin:0 0 .75rem;
+    border-bottom:2px solid #fff;
+    padding-bottom:.25rem;
+  }
+  .ql-column ul{list-style:none; margin:0; padding:0}
+.ql-column li{margin:.4rem 0}
+.ql-column a{
+  color:#fff;
+  text-decoration:none;
+  font-weight:bold;
+}
+.ql-column a:hover{text-decoration:underline}
+
+/* Responsive */
+@media (max-width: 768px){
+    .two-col .container{flex-direction: column;}
+}
