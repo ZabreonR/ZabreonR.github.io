@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Assignment 7</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Assignment 7</h1>
+    <h2>Introduction to JavaScript</h2>
+
+    <div class="container">
+        <!-- Sunny Times -->
+         <div class="box" id="sunnyBox">
+            <h3>Sunny Times</h3>
+            <p id="sunnyText">Here comes the sun<br><br>&nbsp;&nbsp;Sun<br><br>&nbsp;&nbsp;Sun<br><br>&nbsp;&nbsp;Sun<br><br>Here it comes</p>
+    </div>
+
+    <!-- Color Picker -->
+     <div class="box">
+        <input type="color" id="colorPicker">
+        <p id="colorResults">Pick a color above</p>
+     </div>
+
+     <!-- Image Change -->
+      <div class="box">
+        <h3>Image Change</h3>
+        <img id="changeImage" src="cloudimage.jpg" alt="Cloudy image">
+      </div>
+      </div>
+
+      <footer>@ZaBreonRobinson.com</footer>
+
+      <script>
+        // Sunny Times click → show lyrics
+    const sunnyBox = document.getElementById("sunnyBox");
+    const sunnyText = document.getElementById("sunnyText");
+    sunnyBox.addEventListener("click", () => {
+      sunnyText.style.display = "block";
+    });
+      
+      // Color picker → update text and color code
+    const colorPicker = document.getElementById("colorPicker");
+    const colorResult = document.getElementById("colorResult");
+    colorPicker.addEventListener("input", () => {
+      const color = colorPicker.value;
+      colorResult.textContent = `You chose: ${color}`;
+      colorResult.style.color = color;
+    });
+      
+      // Image click → swap to sunny image
+    const changeImage = document.getElementById("changeImage");
+    const cloudyImg = "cloudimage.jpg";
+    const sunnyImg = "sunpic.jpg";
+    changeImage.addEventListener("click", () => {
+      changeImage.src = sunnyImg;
+    });
+      </script>
+</body>
+</html>
