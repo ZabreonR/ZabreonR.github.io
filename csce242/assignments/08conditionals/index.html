@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Assignment 8 - If Statements</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+        <h1>Assignment 8</h1>
+        <h2>If Statements</h2>
+        <!-- Menu -->
+        <nav class="menu">
+            <button id="toggleMenu" class="menu-toggle">▼</button>
+        <ul id="menuItems" class="hidden">
+          <li><a href="#" id="exercise1Btn">Exercise 1</a></li>
+          <li><a href="#" id="exercise2Btn">Exercise 2</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Exercise 1: Planting -->
+<section id="exercise1" class="exercise">
+    <h3>Exercise 1: Planting</h3>
+      <label for="daysSlider">How many days has it been since watering your plant?</label>
+      <input type="range" id="daysSlider" min="1" max="12" value="1">
+      <p id="plantMessage"></p>
+      <img id="plantImage" src="" alt="">
+    </section>
+
+    <!-- Exercise 2: Digital Clock -->
+    <section id="exercise2" class="exercise hidden">
+        <h3>Exercise 2: Our Digital Clock</h3>
+      <p id="clock"></p>
+    </section>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>

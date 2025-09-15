@@ -1,0 +1,83 @@
+/* General page setup */
+body {
+    font-family: Arial, sans-serif;
+    background: #fdfdfd;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  justify-content: center;
+}
+
+.container {
+  max-width: 600px;
+  text-align: center;
+  background: #f5f5f0;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 30px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #c33;
+  }
+  
+  h2 {
+    color: #555;
+  }
+
+  /* Menu */
+.menu {
+    margin-top: 10px;
+    position: relative;
+  }
+  
+  .menu-toggle {
+    background: none;
+    border: none;
+    font-size: 20px;
+  cursor: pointer;
+}
+
+#menuItems {
+    list-style: none;
+  padding: 0;
+  margin: 5px 0;
+}
+
+#menuItems li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+#menuItems li::after {
+    content: " | ";
+  }
+  
+  #menuItems li:last-child::after {
+    content: "";
+  }
+
+  #menuItems a {
+    text-decoration: none;
+    color: #0077cc;
+    cursor: pointer;
+  }
+  
+  #menuItems a:hover {
+    color: #005599;
+  }
+
+  /* Exercises */
+.exercise {
+    margin-top: 20px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+
+  #plantImage {
+    max-width: 200px;
+    margin-top: 15px;
+  }
