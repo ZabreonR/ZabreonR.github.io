@@ -1,11 +1,8 @@
-/* =========================
-   Fonts & Variables
-========================= */
+/* Fonts & Variables */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
 
-:root {/* =========================
-  Fonts & Variables
-========================= */
+:root {
+  /* Fonts & Variables*/
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
 
 :root {
@@ -17,9 +14,7 @@
   --font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
 }
 
-/* =========================
-   Global Reset
-========================= */
+/* Global Reset */
 * {
   margin: 0;
   padding: 0;
@@ -33,9 +28,7 @@ body {
   line-height: 1.6;
 }
 
-/* =========================
-   Layout Containers
-========================= */
+/* Layout Containers */
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -56,9 +49,7 @@ header h1 {
   margin-bottom: 10px;
 }
 
-/* =========================
-   Navigation
-========================= */
+/* Navigation */
 nav ul {
   list-style: none;
   padding: 0;
@@ -81,9 +72,7 @@ nav ul li a.active {
   color: var(--gray-dark);
 }
 
-/* =========================
-   Sections
-========================= */
+/* Sections */
 section {
   margin: 40px 0;
 }
@@ -134,9 +123,7 @@ contact ul li {
   color: var(--gray-dark);
 }
 
-/* =========================
-   Marketplace (Product Grid)
-========================= */
+/* Marketplace (Product Grid) */
 .market-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
@@ -172,9 +159,7 @@ contact ul li {
   color: var(--gray-dark);
 }
 
-/* =========================
-   Blog / News
-========================= */
+/* Blog / News */
 .blog-list {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -202,9 +187,7 @@ contact ul li {
   color: var(--gray-dark);
 }
 
-/* =========================
-   Footer
-========================= */
+/* Footer*/
 footer {
   margin-top: 40px;
   border-top: 1px solid var(--border);
@@ -213,9 +196,7 @@ footer {
   color: var(--gray-dark);
 }
 
-/* =========================
-   Responsive
-========================= */
+/* Responsive */
 @media (max-width: 768px) {
   nav ul li {
     display: block;
