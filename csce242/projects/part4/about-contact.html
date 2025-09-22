@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About & Contact — SneakerVault</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner container">
+      <a class="logo" href="index.html">SNEAKERVAULT</a>
+      <nav class="main-nav">
+        <a href="index.html">Market</a>
+        <a href="timeline.html">Timeline</a>
+        <a href="blog.html">Blog</a>
+        <a href="about-contact.html" class="active">About & Contact</a>
+      </nav>
+      <div class="header-actions">
+        <input class="search" placeholder="Search site..." />
+        <button class="hamburger" aria-expanded="false"><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main class="page container">
+    <section class="reveal" style="display:grid; grid-template-columns:1fr 1fr; gap:20px;">
+      <div class="product-image" style="height:320px;">
+        <img src="https://images.unsplash.com/photo-1507473885765-e6ed057f782c?q=80&w=1400&auto=format&fit=crop" alt="Studio sneaker shot">
+      </div>
+      <div class="panel-like">
+        <h2>About SneakerVault</h2>
+        <p class="muted">We’re a student‑built marketplace built around community trust, verified listings, and clean design. Our goal is to make buying and selling sneakers simple, transparent, and fun.</p>
+        <p class="muted">Feedback matters — we iterate on design and features based on real user input.</p>
+      </div>
+    </section>
+
+    <section class="reveal" style="margin-top:20px;">
+      <h2>Contact</h2>
+      <ul class="muted" style="line-height:1.9;">
+        <li><strong>Email:</strong> support@sneakervault.com</li>
+        <li><strong>Location:</strong> Columbia, SC</li>
+        <li><strong>Social:</strong> Instagram · Twitter · Facebook</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner container">
+      <div>© 2025 SneakerVault</div>
+      <nav><a href="index.html">Market</a> | <a href="blog.html">Blog</a></nav>
+    </div>
+  </footer>
+
+  <script>
+    (()=>{
+      const body=document.body, burg=document.querySelector('.hamburger');
+      burg?.addEventListener('click', ()=>{const open=burg.getAttribute('aria-expanded')==='true'; burg.setAttribute('aria-expanded', String(!open)); body.classList.toggle('nav-open', !open);});
+      const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('is-visible');}})},{threshold:.15});
+      document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+    })();
+  </script>
+</body>
+</html>
