@@ -30,6 +30,11 @@ img{display:block; width:100%; height:100%; object-fit:cover} /* no stretching *
 .page{padding:28px 0 80px}
 .muted{color:var(--muted)}
 
+.blog-thumb img {
+  height: auto;
+  object-fit: contain;
+}
+
 /* Header */
 .site-header{
   position:sticky; top:0; z-index:50; backdrop-filter:blur(10px);
