@@ -11,7 +11,7 @@ const catsAfter = {
   Luna: "images/after-luna.jpg",
   Oliver: "images/after-oliver.jpg",
   Nala: "images/after-nala.jpg",
-  Max: "images/after-max.jpg"
+  Max: "images/after-max.jpg" 
 };
 
 const gallery = document.getElementById("gallery");
