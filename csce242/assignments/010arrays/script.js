@@ -1,17 +1,17 @@
 // Images are stored locally inside the /images folder
 
 const catsBefore = {
-  Luna: "images/luna-before.jpg",
-  Oliver: "images/oliver-before.jpg",
-  Nala: "images/nala-before.jpg",
-  Max: "images/max-before.jpg"
+  Luna: "images/before-luna.jpg",
+  Oliver: "images/before-oliver.jpg",
+  Nala: "images/before-nala.jpg",
+  Max: "images/before-max.jpg"
 };
 
 const catsAfter = {
-  Luna: "images/luna-after.jpg",
-  Oliver: "images/oliver-after.jpg",
-  Nala: "images/nala-after.jpg",
-  Max: "images/max-after.jpg"
+  Luna: "images/after-luna.jpg",
+  Oliver: "images/after-oliver.jpg",
+  Nala: "images/after-nala.jpg",
+  Max: "images/after-max.jpg"
 };
 
 const gallery = document.getElementById("gallery");
