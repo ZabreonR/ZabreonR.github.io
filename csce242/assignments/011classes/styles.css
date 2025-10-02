@@ -1,0 +1,64 @@
+body {
+    background-color: #f1f2e6;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    color: #457285;
+    margin-top: 30px;
+  }
+  
+  h2 {
+    color: #c65c5c;
+    margin-bottom: 20px;
+  }
+  
+  /* Horizontal row of paintings */
+  #gallery {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 20px;
+    scroll-behavior: smooth;
+  }
+  
+  /* Each painting card */
+  .painting {
+    flex: 0 0 auto;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .painting img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .painting img:hover {
+    transform: scale(1.05);
+  }
+  
+  .painting h3 {
+    color: darkred;
+    margin-bottom: 10px;
+  }
+  
+  footer {
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: #4b7071;
+  }
+  
+  a {
+    color: #2e6f79;
+  }
