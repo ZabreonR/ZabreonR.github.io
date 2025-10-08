@@ -34,11 +34,13 @@ document.addEventListener("DOMContentLoaded", () => {
       .then((res) => res.json())
       .then((data) => {
         console.log("Loaded sneaker data:", data);
-        productGrid.innerHTML = data
-          .map(
-            (item) => `
+
+        // Create sneaker cards
+        productGrid.innerHTML = data.map((item) => `
           <a class="product-card reveal" href="product.html">
-            <div class="thumb"><img src="${item.img_name}" alt="${item.name}"></div>
+            <div class="thumb">
+              <img src="${item.img_name}" alt="${item.name}">
+            </div>
             <div class="product-body">
               <div class="product-title">${item.name}</div>
               <div class="product-meta">
@@ -46,9 +48,12 @@ document.addEventListener("DOMContentLoaded", () => {
               </div>
             </div>
           </a>
-        `
-          )
-          .join("");
+        `).join("");
+
+        // Force visibility for dynamically loaded cards
+        document.querySelectorAll(".product-card").forEach((el) => {
+          el.classList.add("is-visible");
+        });
       })
       .catch((err) => {
         console.error("Error loading JSON:", err);
