@@ -25,7 +25,6 @@
   </header>
 
   <main class="page container">
-    <!-- Hero -->
     <section class="hero reveal">
       <div class="hero-left">
         <h1>Featured Drop</h1>
@@ -43,7 +42,6 @@
       </div>
     </section>
 
-    <!-- Filters -->
     <section class="filters reveal" aria-label="Filters">
       <div class="filter-group">
         <select aria-label="Brand filter">
@@ -75,11 +73,9 @@
       </div>
     </section>
 
-    <!-- Product Grid (JSON loads here) -->
+    <!-- ✅ JSON Data Loads Here -->
     <section id="products" class="content" aria-label="Products">
-      <div class="product-grid" id="product-grid">
-        <!-- Sneaker cards will load here dynamically via scripts.js -->
-      </div>
+      <div id="product-grid" class="product-grid"></div>
     </section>
   </main>
 
@@ -89,7 +85,8 @@
     </div>
   </footer>
 
-  <!-- JSON Data: This Market page dynamically loads sneaker listings from sneakers.json hosted on GitHub Pages. -->
+  <!-- Instructor note: Market page displays JSON sneaker data -->
   <script src="scripts.js"></script>
 </body>
 </html>
+
