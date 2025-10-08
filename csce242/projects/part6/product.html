@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Product — SneakerVault</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner container">
+      <a class="logo" href="index.html">SNEAKERVAULT</a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="market.html">Market</a>
+        <a href="timeline.html">Timeline</a>
+        <a href="blog.html">Blog</a>
+        <a href="about-contact.html">About & Contact</a>
+      </nav>
+      <div class="header-actions">
+        <input class="search" placeholder="Search..." />
+        <button class="hamburger" aria-expanded="false"><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main class="page container">
+    <section class="panel reveal" style="display:flex; gap:20px; flex-wrap:wrap;">
+      <!-- Gallery -->
+      <div style="flex:0 0 460px; max-width:100%;">
+        <div class="product-image" style="height:460px;">
+          <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=1600&auto=format&fit=crop" alt="Red sneaker hero">
+        </div>
+        <div style="margin-top:10px; display:grid; grid-template-columns:repeat(3,1fr); gap:10px;">
+          <div class="product-image" style="height:120px;">
+            <img src="https://images.unsplash.com/photo-1525966222134-fcfa99b8ae77?q=80&w=800&auto=format&fit=crop" alt="White sneaker alt view">
+          </div>
+          <div class="product-image" style="height:120px;">
+            <img src="https://images.unsplash.com/photo-1600180758890-6b94519a8ba6?q=80&w=800&auto=format&fit=crop" alt="Bone color alt view">
+          </div>
+          <div class="product-image" style="height:120px;">
+            <img src="https://images.unsplash.com/photo-1543508282-6319a3e2621f?q=80&w=800&auto=format&fit=crop" alt="Blue sneaker alt view">
+          </div>
+        </div>
+      </div>
+
+      <!-- Details -->
+      <div style="flex:1; min-width:280px;">
+        <h1 style="margin-top:0;">Crimson Velocity</h1>
+        <p class="muted">Brand: SV Studio • SKU: SV‑CV01 • Condition: New</p>
+        <h2>$199</h2>
+        <p class="muted">Lightweight knit upper with responsive foam midsole. Daily driver built for comfort and style.</p>
+
+        <div style="margin-top:16px; display:flex; gap:10px;">
+          <a class="btn" href="#">Buy Now</a>
+          <a class="btn alt" href="#">Propose Trade</a>
+          <a class="btn alt" href="#">Add to Wishlist</a>
+        </div>
+
+        <section style="margin-top:22px;">
+          <h3>Details</h3>
+          <ul class="muted" style="line-height:1.9;">
+            <li>Release year: 2025</li>
+            <li>Materials: Knit upper, rubber outsole</li>
+            <li>Included: Extra laces, dust bag</li>
+          </ul>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner container">
+      <div>© 2025 SneakerVault</div>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

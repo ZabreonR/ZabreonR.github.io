@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SneakerVault — Market</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner container">
+      <a class="logo" href="index.html">SNEAKERVAULT</a>
+      <nav class="main-nav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="market.html" class="active">Market</a>
+        <a href="timeline.html">Timeline</a>
+        <a href="blog.html">Blog</a>
+        <a href="about-contact.html">About & Contact</a>
+      </nav>
+      <div class="header-actions">
+        <input class="search" placeholder="Search sneakers..." aria-label="Search" />
+        <button class="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
+      </div>
+    </div>
+  </header>
+
+  <main class="page container">
+    <!-- Hero -->
+    <section class="hero reveal">
+      <div class="hero-left">
+        <h1>Featured Drop</h1>
+        <p>Curated picks, verified sellers, and fair prices. Build your rotation with confidence.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#products">Shop Market</a>
+          <a class="btn alt" href="#">Sell</a>
+          <a class="btn alt" href="#">Trade</a>
+        </div>
+      </div>
+      <div class="hero-right">
+        <div class="product-image">
+          <img src="jordan4cem.png" alt="High-top sneaker on gradient backdrop" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Filters -->
+    <section class="filters reveal" aria-label="Filters">
+      <div class="filter-group">
+        <select aria-label="Brand filter">
+          <option>All brands</option>
+          <option>Nike</option>
+          <option>Adidas</option>
+          <option>Jordan</option>
+          <option>New Balance</option>
+        </select>
+        <select aria-label="Size filter">
+          <option>All sizes</option>
+          <option>7</option><option>8</option><option>9</option><option>10</option><option>11</option>
+        </select>
+        <select aria-label="Condition filter">
+          <option>Any condition</option>
+          <option>New</option>
+          <option>Like New</option>
+          <option>Used</option>
+        </select>
+      </div>
+
+      <div class="filter-group">
+        <label for="sort">Sort:</label>
+        <select id="sort">
+          <option>Newest</option>
+          <option>Price ↑</option>
+          <option>Price ↓</option>
+        </select>
+      </div>
+    </section>
+
+    <!-- JSON Product Grid -->
+    <!-- JSON data from sneakers.json is fetched and displayed here -->
+    <section id="products" class="content" aria-label="Products">
+      <div id="product-grid" class="product-grid">
+        <p class="muted">Loading sneakers...</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner container">
+      <div>© 2025 SneakerVault</div>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
