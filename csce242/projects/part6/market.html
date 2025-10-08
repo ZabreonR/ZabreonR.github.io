@@ -25,6 +25,7 @@
   </header>
 
   <main class="page container">
+    <!-- Hero -->
     <section class="hero reveal">
       <div class="hero-left">
         <h1>Featured Drop</h1>
@@ -42,6 +43,7 @@
       </div>
     </section>
 
+    <!-- Filters -->
     <section class="filters reveal" aria-label="Filters">
       <div class="filter-group">
         <select aria-label="Brand filter">
@@ -53,7 +55,11 @@
         </select>
         <select aria-label="Size filter">
           <option>All sizes</option>
-          <option>7</option><option>8</option><option>9</option><option>10</option><option>11</option>
+          <option>7</option>
+          <option>8</option>
+          <option>9</option>
+          <option>10</option>
+          <option>11</option>
         </select>
         <select aria-label="Condition filter">
           <option>Any condition</option>
@@ -75,7 +81,9 @@
 
     <!-- ✅ JSON Data Loads Here -->
     <section id="products" class="content" aria-label="Products">
-      <div id="product-grid" class="product-grid"></div>
+      <div id="product-grid" class="product-grid">
+        <!-- Sneakers from sneakers.json will be loaded here dynamically -->
+      </div>
     </section>
   </main>
 
@@ -85,8 +93,10 @@
     </div>
   </footer>
 
-  <!-- Instructor note: Market page displays JSON sneaker data -->
+  <!-- Instructor Note:
+       JSON Data: This Market page dynamically loads sneaker data
+       from sneakers.json hosted at:
+       https://zabreonr.github.io/csce242/projects/part6/sneakers.json -->
   <script src="scripts.js"></script>
 </body>
 </html>
-
