@@ -42,9 +42,11 @@
       <h2>Contact Us</h2>
       <div class="contact-grid">
         <!-- Contact Form -->
-        <form id="contactForm" action="https://formsubmit.co/zabreonrobinson1@yahoo.com" method="POST">
-          <input type="hidden" name="_subject" value="New Contact Form Message - SneakerVault">
+        <form id="contactForm" method="POST" novalidate>
+          <input type="hidden" name="_next" value="">
           <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_subject" value="New Contact Form Message - SneakerVault">
+          <input type="hidden" name="_template" value="table">
 
           <input type="text" name="name" placeholder="Your Name" required>
           <input type="email" name="email" placeholder="Your Email" required>
