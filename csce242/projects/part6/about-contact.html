@@ -25,33 +25,53 @@
   </header>
 
   <main class="page container">
+    <!-- About Section -->
     <section class="reveal" style="display:grid; grid-template-columns:1fr 1fr; gap:20px;">
       <div class="product-image" style="height:320px;">
         <img src="jordanwall.png" alt="Studio sneaker shot">
       </div>
       <div class="panel-like">
         <h2>About SneakerVault</h2>
-        <p class="muted">We’re a student‑built marketplace built around community trust, verified listings, and clean design. Our goal is to make buying and selling sneakers simple, transparent, and fun.</p>
-        <p class="muted">Feedback matters we iterate on design and features based on real user input.</p>
+        <p class="muted">We’re a student-built sneaker marketplace focused on community trust, verified listings, and clean design. Our goal is to make buying and selling sneakers simple, transparent, and fun.</p>
+        <p class="muted">We constantly evolve based on your feedback — helping us improve features and design for a better user experience.</p>
       </div>
     </section>
 
-    <section class="reveal" style="margin-top:20px;">
-      <h2>Contact</h2>
-      <ul class="muted" style="line-height:1.9;">
-        <li><strong>Email:</strong> support@sneakervault.com</li>
-        <li><strong>Location:</strong> Columbia, SC</li>
-        <li><strong>Social:</strong> Instagram · Twitter · Facebook</li>
-      </ul>
+    <!-- Contact Section -->
+    <section class="reveal" style="margin-top:40px;">
+      <h2>Contact Us</h2>
+      <div class="contact-grid">
+        <!-- Contact Form -->
+        <form id="contactForm" action="https://formsubmit.co/zabreonrobinson1@yahoo.com" method="POST">
+          <input type="hidden" name="_subject" value="New Contact Form Message - SneakerVault">
+          <input type="hidden" name="_captcha" value="false">
+
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+
+          <button type="submit">Send Message</button>
+          <div id="formStatus" class="form-status"></div>
+        </form>
+
+        <!-- Google Map IFrame -->
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3352.317255436493!2d-81.03481492372549!3d34.00071018062522!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f8b5bdf0a8d2b1%3A0x9b47a03a1b1260c2!2sColumbia%2C%20SC!5e0!3m2!1sen!2sus!4v1697730000000!5m2!1sen!2sus"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="footer-inner container">
-      <div>© 2025 SneakerVault</div>
+      <div>© 2025 SneakerVault | <a href="about-contact.html" style="color:var(--accent)">Contact Us</a></div>
     </div>
   </footer>
 
+  <!-- External JS File -->
   <script src="scripts.js"></script>
 </body>
 </html>

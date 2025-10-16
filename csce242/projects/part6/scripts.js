@@ -60,4 +60,34 @@ document.addEventListener("DOMContentLoaded", () => {
         productGrid.innerHTML = `<p class="muted">Failed to load sneaker data. Check JSON link.</p>`;
       });
   }
+
+  // --- Contact Form Handler (About-Contact Page) ---
+  const form = document.getElementById("contactForm");
+  const statusDiv = document.getElementById("formStatus");
+
+  if (form) {
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      statusDiv.textContent = "Sending...";
+      statusDiv.className = "form-status";
+
+      try {
+        const response = await fetch(form.action, {
+          method: "POST",
+          body: new FormData(form),
+        });
+
+        if (response.ok) {
+          statusDiv.textContent = "Message sent successfully!";
+          statusDiv.classList.add("success");
+          form.reset();
+        } else {
+          throw new Error("Form submission failed.");
+        }
+      } catch (error) {
+        statusDiv.textContent = "Error sending message. Please try again.";
+        statusDiv.classList.add("error");
+      }
+    });
+  }
 });
